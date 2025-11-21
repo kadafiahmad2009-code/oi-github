@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazmi Rasyad Cahya - Full Stack Developer</title>
+    <link rel="stylesheet" href="sty.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- <style>
+        .loading-animation {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            border: 6px solid var(--text-secondary);
+            border-top: 6px solid var(--accent-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            z-index: 1000;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style> -->
+</head>
+<body>
+    <div class="loading-animation"></div>
+
+    <header class="header">
+        <nav class="container nav-bar">
+            <a href="#home" class="logo">Mii.Dev</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero fade-in">
+            <div class="container hero-content">
+                <p class="subtitle">Halo 👋, nama saya</p>
+                <h1 class="fade-in-up">Nazmi Rasyad Cahya</h1>
+                <p class="description">Full Stack Developer</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn btn-primary">Lihat Proyek</a>
+                    <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about fade-in">
+            <div class="container about-grid">
+                <div class="profile-image">
+                    <img src="assets/me.jpg" alt="Foto Profil Nazmi Rasyad Cahya">
+                </div>
+                <div class="about-content">
+                    <h2 class="section-title">Tentang Saya</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, aliquam, expedita aut praesentium non beatae doloribus vero ratione ducimus qui fuga vel commodi autem architecto enim sit numquam, nesciunt minima.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nesciunt eligendi, sint itaque dolorem earum, pariatur voluptates doloribus sunt voluptas similique amet excepturi ratione. Iusto sequi quas eum consequatur deserunt!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills fade-in">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">🎨</div>
+                        <h3>Frontend</h3>
+                        <p>HTML5, CSS3, JavaScript (ES6+), React.js, Vue.js, jQuery, Responsive Design</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">💻</div>
+                        <h3>Backend</h3>
+                        <p>Node.js, Express.js, PHP, Python, RESTful API, Authentication & Authorization</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">💾</div>
+                        <h3>Database</h3>
+                        <p>MySQL, MongoDB, PostgreSQL, Firebase, SQL</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects fade-in">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">🛒</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce Website</h3>
+                            <p>Sebuah platform e-commerce lengkap dengan fitur keranjang belanja, checkout, dan manajemen produk.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Demo</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">📱</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Chat App</h3>
+                            <p>Aplikasi chat real-time menggunakan WebSocket untuk komunikasi instan.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Express.js</span>
+                                <span class="tech-tag">WebSocket</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Demo</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-header">
+                            <span class="project-icon">📝</span>
+                        </div>
+                        <div class="project-content">
+                            <h3>Blog Platform</h3>
+                            <p>Sebuah sistem manajemen konten (CMS) sederhana untuk membuat dan mengelola artikel blog.</p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">RESTful API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Demo</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact fade-in">
+            <div class="container">
+                <h2 class="section-title">Hubungi Saya</h2>
+                <p class="contact-description">Tertarik untuk bekerja sama? Kirimkan pesan melalui formulir di bawah ini.</p>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nama</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" id="submitBtn" class="btn btn-primary">Kirim Pesan</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/yourusername" target="_blank" class="social-link">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.805 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.542-1.373-1.322-1.744-1.322-1.744-1.082-.74.08-.725.08-.725 1.192.085 1.82 1.22 1.82 1.22 1.06 1.812 2.784 1.29 3.46.99.108-.77.418-1.29.762-1.583-2.645-.295-5.414-1.32-5.414-5.934 0-1.31.47-2.38 1.236-3.22-.124-.29-.536-1.52.117-3.175 0 0 1-.32 3.3.99.945-.262 1.945-.392 2.945-.392s1.99.13 2.945.392c2.29-1.31 3.29-.99 3.29-.99.653 1.655.24 2.885.12 3.175.765.84 1.235 1.91 1.235 3.22 0 4.624-2.77 5.62-5.42 5.91-.4.35-.76.99-.76 1.99 0 1.45.015 2.62.015 2.97 0 .32.21.69.825.57C20.565 22.092 24 17.59 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.629c0-1.326-.026-3.033-1.853-3.033-1.853 0-2.136 1.445-2.136 2.934v5.728h-3.553v-11.961h3.418v1.644h.047c.477-.9 1.636-1.85 3.37-1.85 3.614 0 4.288 2.37 4.288 5.438v6.23h3.554v-7.14c0-3.239-2.13-5.918-5.303-5.918-2.636 0-3.868 1.436-4.524 2.454h.047v-2.105h-3.553c.041.986 0 11.961 0 11.961h3.553v-5.631c0-1.324.022-2.396 1.348-2.396 1.348 0 1.547 1.026 1.547 2.477v5.55h3.552zM3.607 8.046c-.001-.989-.35-1.93-1.01-2.607-.66-.677-1.597-1.03-2.585-1.028-.988-.002-1.925.35-2.585 1.028-.66.677-.996 1.618-1.01 2.607.014 1.006.37 1.96 1.042 2.637.672.677 1.615 1.03 2.617 1.028 1-.002 1.944-.352 2.616-1.028.672-.677 1.028-1.632 1.042-2.637zM4.385 20.452h-3.553v-11.961h3.553v11.961z"/></svg>
+                </a>
+                <a href="https://instagram.com/yourusername" target="_blank" class="social-link">
+                    <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.783 0 8.358.016 7.15.07c-1.196.054-2.03.242-2.752.52c-.722.28-1.343.682-1.96.994-.617.312-1.155.7-1.688 1.233-.533.533-.92.915-1.232 1.532-.312.617-.714 1.238-.994 1.96-.28.722-.468 1.556-.52 2.752C.016 8.358 0 8.783 0 12c0 3.217.016 3.642.07 4.85.054 1.196.242 2.03.52 2.752.28.722.682 1.343.994 1.96.312.617.7 1.155 1.233 1.688.533.533.915.92 1.532 1.232.617.312 1.238.714 1.96.994.722.28 1.556.468 2.752.52C8.358 23.984 8.783 24 12 24c3.217 0 3.642-.016 4.85-.07 1.196-.054 2.03-.242 2.752-.52.722-.28 1.343-.682 1.96-.994.617-.312 1.155-.7 1.688-1.233.533-.533.92-.915 1.232-1.532.312-.617.714-1.238.994-1.96.28-.722.468-1.556.52-2.752.054-1.19.07-1.615.07-4.85s-.016-3.642-.07-4.85c-.054-1.196-.242-2.03-.52-2.752-.28-.722-.682-1.343-.994-1.96-.312-.617-.7-1.155-1.233-1.688C20.697 1.18 20.272.798 19.655.485c-.617-.312-1.238-.714-1.96-.994-.722-.28-1.556-.468-2.752-.52C15.642.016 15.217 0 12 0zm0 1.945c3.155 0 3.541.012 4.79.065 1.102.05 1.79.23 2.228.423.44.195.83.435 1.24.845.41.41.65.8.845 1.24.195.438.373 1.126.423 2.228.053 1.249.065 1.635.065 4.79s-.012 3.541-.065 4.79c-.05 1.102-.23 1.79-.423 2.228-.195.44-.435.83-.845 1.24-.41.41-.8.65-1.24.845-.438.195-1.126.373-2.228.423-1.249.053-1.635.065-4.79.065s-3.541-.012-4.79-.065c-1.102-.05-1.79-.23-2.228-.423-.44-.195-.83-.435-1.24-.845-.41-.41-.65-.8-.845-1.24-.195-.438-.373-1.126-.423-2.228-.053-1.249-.065-1.635-.065-4.79s.012-3.541.065-4.79c.05-1.102.23-1.79.423-2.228.195-.44.435-.83.845-1.24.41-.41.8-.65 1.24-.845.438-.195 1.126-.373 2.228-.423C8.459 1.957 8.845 1.945 12 1.945zM12 5.92c-3.344 0-6.08 2.736-6.08 6.08s2.736 6.08 6.08 6.08c3.344 0 6.08-2.736 6.08-6.08s-2.736-6.08-6.08-6.08zm0 10.155c-2.25 0-4.075-1.825-4.075-4.075s1.825-4.075 4.075-4.075c2.25 0 4.075 1.825 4.075 4.075s-1.825 4.075-4.075 4.075zm6.496-8.91c0-.6.486-1.086 1.086-1.086.6 0 1.086.486 1.086 1.086 0 .6-.486 1.086-1.086 1.086-.6 0-1.086-.486-1.086-1.086z"/></svg>
+                </a>
+            </div>
+            <p>&copy; <span id="current-year"></span> Nazmi Rasyad Cahya. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const loadingAnimation = document.querySelector('.loading-animation');
+            if (loadingAnimation) {
+                loadingAnimation.style.display = 'none';
+            }
+
+            const navLinks = document.getElementById('navLinks');
+            const menuToggle = document.getElementById('menuToggle');
+            const navLinksList = navLinks.querySelectorAll('a');
+
+            // Smooth Scrolling & Mobile Menu
+            navLinksList.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - document.querySelector('.header').offsetHeight,
+                            behavior: 'smooth'
+                        });
+                    }
+
+                    // Close mobile menu after clicking
+                    if (navLinks.classList.contains('active')) {
+                        navLinks.classList.remove('active');
+                        menuToggle.classList.remove('active');
+                        document.body.style.overflow = 'auto'; // Re-enable scroll
+                    }
+                });
+            });
+
+            // Toggle Mobile Menu
+            menuToggle.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+                menuToggle.classList.toggle('active');
+                // Disable scroll on body when menu is active
+                if (navLinks.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = 'auto';
+                }
+            });
+
+            // Sticky Header Logic
+            const header = document.querySelector('.header');
+            const heroSection = document.querySelector('.hero');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 0) {
+                    header.classList.add('sticky');
+                } else {
+                    header.classList.remove('sticky');
+                }
+            });
+
+            // Fade-in on Scroll Animation
+            const fadeInElements = document.querySelectorAll('.fade-in');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.2
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            fadeInElements.forEach(el => observer.observe(el));
+
+            // Basic Form Validation
+            const contactForm = document.getElementById('contactForm');
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+
+                if (name === '' || email === '' || message === '') {
+                    alert('Harap isi semua kolom formulir.');
+                } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                    alert('Format email tidak valid.');
+                } else {
+                    alert('Pesan berhasil dikirim! Terima kasih.');
+                    contactForm.reset();
+                }
+            });
+
+            // Update footer year
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
