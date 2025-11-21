@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowWash - Sabun Muka Premium</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:"Poppins",sans-serif;
+        }
+
+        body{
+            background:#f6f6f6;
+            color:#333;
+            transition:0.3s;
+        }
+
+        body.dark{
+            background:#1f1f1f;
+            color:white;
+        }
+
+        header{
+            width:100%;
+            padding:20px 80px;
+            background:#ffffff;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:fixed;
+            top:0;
+            z-index:100;
+            box-shadow:0 2px 8px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        body.dark header{
+            background:#333;
+        }
+
+        header h1{
+            color:#34a0a4;
+            font-weight:700;
+        }
+
+        nav a{
+            margin-left:25px;
+            text-decoration:none;
+            color:#333;
+            font-weight:500;
+        }
+
+        body.dark nav a{
+            color:white;
+        }
+
+        nav a:hover{
+            color:#34a0a4;
+        }
+
+        .toggle-dark{
+            padding:8px 15px;
+            border-radius:8px;
+            border:none;
+            background:#34a0a4;
+            color:white;
+            cursor:pointer;
+        }
+
+        .hero{
+            padding:120px 80px 80px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .hero-text h2{
+            font-size:45px;
+            font-weight:700;
+            margin-bottom:20px;
+            color:#1a535c;
+        }
+
+        .hero-text button{
+            padding:15px 30px;
+            background:#34a0a4;
+            border:none;
+            color:white;
+            font-size:18px;
+            border-radius:8px;
+            cursor:pointer;
+            transition:0.25s;
+        }
+
+        .hero-text button:hover{
+            transform:scale(1.1);
+            background:#1b7d7f;
+        }
+
+        .hero img{
+            width:380px;
+            border-radius:15px;
+            transition:0.3s;
+        }
+
+        .hero img:hover{
+            transform:scale(1.05);
+        }
+
+        .features, .pricing, .testimonials{
+            padding:70px 80px;
+            text-align:center;
+        }
+
+        .feature-box, .pricing-cards, .testimonial-list{
+            display:flex;
+            justify-content:space-between;
+            gap:20px;
+        }
+
+        .feature, .price-card, .testimonial{
+            width:30%;
+            background:white;
+            padding:25px;
+            border-radius:12px;
+            box-shadow:0 3px 10px rgba(0,0,0,0.1);
+            transition:0.3s;
+        }
+
+        body.dark .feature, body.dark .price-card, body.dark .testimonial{
+            background:#2a2a2a;
+            box-shadow:none;
+            color:white;
+        }
+
+        .feature:hover, .price-card:hover, .testimonial:hover{
+            transform:translateY(-10px);
+        }
+
+        .whatsapp-btn{
+            position:fixed;
+            bottom:25px;
+            right:25px;
+            background:#25d366;
+            width:65px;
+            height:65px;
+            border-radius:50%;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-size:30px;
+            color:white;
+            box-shadow:0 4px 10px rgba(0,0,0,0.3);
+            cursor:pointer;
+            z-index:200;
+        }
+
+        .popup{
+            position:fixed;
+            top:0; left:0;
+            width:100%; height:100%;
+            background:rgba(0,0,0,0.6);
+            display:none;
+            justify-content:center;
+            align-items:center;
+            z-index:300;
+        }
+
+        .popup-content{
+            background:white;
+            padding:30px;
+            border-radius:12px;
+            width:350px;
+            text-align:center;
+        }
+
+        .popup-content button{
+            margin-top:15px;
+            background:#34a0a4;
+            padding:10px 20px;
+            border:none;
+            color:white;
+            border-radius:8px;
+            cursor:pointer;
+        }
+
+        @media (max-width:900px){
+            .hero{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            .feature-box, .pricing-cards, .testimonial-list{
+                flex-direction:column;
+            }
+
+            .feature, .price-card, .testimonial{
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>GlowWash</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#fitur">Fitur</a>
+        <a href="#harga">Harga</a>
+        <a href="#testimoni">Testimoni</a>
+    </nav>
+    <button class="toggle-dark">Dark Mode</button>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-text" data-aos="fade-right">
+        <h2>Cerah, Bersih, dan Sehat Setiap Hari</h2>
+        <p>GlowWash adalah sabun muka premium dengan formula lembut yang membersihkan wajah secara menyeluruh tanpa membuat kulit kering.</p>
+        <button onclick="openPopup()">Beli Sekarang</button>
+        <img src="facial wash.jpg" alt="">
+    </div>
+</section>
+            
+            
+<section class="features" id="fitur">
+    <h3 data-aos="fade-up">Keunggulan GlowWash</h3>
+
+    <div class="feature-box">
+        <div class="feature" data-aos="zoom-in">
+            <h4>Membersihkan Mendalam</h4>
+            <p>Mengangkat minyak, debu, dan kotoran dengan lembut.</p>
+        </div>
+
+        <div class="feature" data-aos="zoom-in">
+            <h4>Bahan Alami</h4>
+            <p>Diformulasikan dari ekstrak alami yang aman untuk kulit sensitif.</p>
+        </div>
+
+        <div class="feature" data-aos="zoom-in">
+            <h4>Mencerahkan Kulit</h4>
+            <p>Kulit tampak lebih cerah dalam 7 hari pemakaian rutin.</p>
+        </div>
+    </div>
+</section>
+
+<section class="pricing" id="harga">
+    <h3 data-aos="fade-up">Paket Harga GlowWash</h3>
+
+    <div class="pricing-cards">
+        <div class="price-card" data-aos="fade-up">
+            <h4>Paket Mini</h4>
+            <h2>Rp 29.000</h2>
+            <p>Ukuran kecil, cocok untuk traveling.</p>
+            <button onclick="openPopup()">Pilih Paket</button>
+        </div>
+
+        <div class="price-card" data-aos="fade-up">
+            <h4>Paket Regular</h4>
+            <h2>Rp 59.000</h2>
+            <p>Ukuran standar untuk pemakaian harian.</p>
+            <button onclick="openPopup()">Pilih Paket</button>
+        </div>
+
+        <div class="price-card" data-aos="fade-up">
+            <h4>Paket Hemat</h4>
+            <h2>Rp 99.000</h2>
+            <p>2 botol ukuran regular, lebih hemat!</p>
+            <button onclick="openPopup()">Pilih Paket</button>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials" id="testimoni">
+    <h3 data-aos="fade-up">Apa Kata Pengguna?</h3>
+
+    <div class="testimonial-list">
+        <div class="testimonial" data-aos="flip-left">
+            <p>“Kulitku jadi lebih cerah dan halus!”</p>
+            <h4>- Rani</h4>
+        </div>
+
+        <div class="testimonial" data-aos="flip-left">
+            <p>“Cocok untuk kulit sensitif.”</p>
+            <h4>- Dina</h4>
+        </div>
+
+        <div class="testimonial" data-aos="flip-left">
+            <p>“Harga terjangkau, kualitas premium.”</p>
+            <h4>- Andi</h4>
+        </div>
+    </div>
+</section>
+
+<div class="popup" id="popup">
+    <div class="popup-content">
+        <h3>Ingin Order GlowWash?</h3>
+        <p>Klik tombol di bawah untuk order Via WhatsApp!</p>
+        <a href="https://wa.me/628xxxxxxx" target="_blank">
+            <button>Order Sekarang</button>
+        </a>
+        <button onclick="closePopup()" style="background:#e63946;margin-top:10px;">Tutup</button>
+    </div>
+</div>
+
+<a href="https://wa.me/628xxxxxxx" target="_blank" class="whatsapp-btn">
+    💬
+</a>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+
+    function openPopup(){
+        document.getElementById("popup").style.display = "flex";
+    }
+    function closePopup(){
+        document.getElementById("popup").style.display = "none";
+    }
+
+    document.querySelector(".toggle-dark").addEventListener("click",()=>{
+        document.body.classList.toggle("dark");
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+        anchor.onclick=function(e){
+            e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior:"smooth"
+            });
+        };
+    });
+</script>
+
+</body>
+</html>
